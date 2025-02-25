@@ -2,45 +2,52 @@ import { TimelineItem } from '../types';
 
 export const timelineData: TimelineItem[] = [
   {
-    year: '2024 - Present',
-    title: 'Founder',
-    company: 'RoadsideCoder',
-    description: 'Teacher on YouTube and Freelance Developer',
+    year: '2022 - Present',
+    title: 'Data Science Manager',
+    company: 'Canada Post - Operations Intelligence',
+    description: 'Optimizing Operations with AI-Driven Workforce Management, Demand Forecasting & Dynamic Pricing',
     icon: 'work'
   },
   {
-    year: '2021 - 2024',
-    title: 'Software Engineer',
-    company: 'Cars24',
-    description: 'Full Stack Development with React, Node.js, and AWS',
+    year: '2017 - 2022',
+    title: 'Lead Data Scientist',
+    company: 'Canada Revenue Agency - Emerging Technologies',
+    description: 'Optimizing Workforce, Workload, and Fraud Detection using Machine Learning and Predictive Analytics',
     icon: 'work'
   },
   {
-    year: '2021',
-    title: 'Frontend Developer',
-    company: 'Incredible.dev',
-    description: 'Building modern web applications with React and TypeScript',
+    year: '2017 - 2018',
+    title: 'Project Management',
+    company: 'Algonquin College',
+    description: 'Specialization in technical, leadership and business strategy skills to plan and execute projects',
     icon: 'work'
   },
   {
-    year: '2021',
-    title: 'DevOps Engineer',
-    company: 'BNP Paribas',
-    description: 'Managing cloud infrastructure and CI/CD pipelines',
-    icon: 'work'
-  },
-  {
-    year: '2019 - 2021',
-    title: 'Master of Computer Applications',
-    company: 'VIT Vellore',
-    description: 'Focused on advanced computing and software development',
+    year: '2016-2017',
+    title: 'Business Intelligence and Data Science',
+    company: 'Alonquin College',
+    description: 'Specialization in Machine Learning & Artificial Intelligence',
     icon: 'education'
   },
   {
-    year: '2016 - 2019',
-    title: 'Bachelor of Computer Applications',
-    company: 'VSICS',
-    description: 'Foundation in computer science and programming',
+    year: '2015-2016',
+    title: 'Senior Credit Risk Analyst',
+    company: 'Wells Fargo',
+    description: 'Focused on Wealth Management and Anti-Money Laundering',
+    icon: 'work'
+  },
+  {
+    year: '2013 - 2015',
+    title: 'Senior Systems Engineer',
+    company: 'Capgemini (Royal Bank of Canada)',
+    description: 'Focused on Capital Markets and Wealth Management',
+    icon: 'work'
+  },
+  {
+    year: '2008 - 2012',
+    title: 'Bachelor of Electrical and Electronics Engineering',
+    company: 'Visvesvaraya Technological University (VTU)',
+    description: 'Foundation in the design and development of electronic devices and embedded systems.',
     icon: 'education'
   }
 ];
