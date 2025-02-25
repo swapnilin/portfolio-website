@@ -28,37 +28,40 @@ export default function About() {
           >
             <img
               src="/piyush.png"
-              alt="Piyush Agarwal"
+              alt="Swapnil Kangralkar"
               className="w-full h-full object-cover rounded-2xl"
             />
           </motion.div>
 
           <motion.div className="space-y-6" variants={staggerContainer}>
             <motion.p className="text-lg text-gray-600" variants={fadeInUp}>
-              Hi, I'm Piyush Agarwal, a passionate Full Stack Developer and
-              educator. I create content on YouTube through my channel
-              RoadsideCoder, where I share my knowledge and experience with the
-              developer community.
+            Hello there, my name is Swapnil Kangralkar. I am a Data Scientist based in Ottawa, Canada.<br/><br/>
+            <strong>Fun fact</strong> - I was born on 04/20 (April 20) at 4:20 pm<br/><br/>
+            I am a lifelong learner and I am currently in the journey of learning everything there is to Data Science. One technology at a time. <br/>
+            My portfolio of projects is a representation of all the practical knowledge that I have gained and applied over time.
+            To view my projects portfolio visit the Github repository by clicking the button below.
+            <br/><br/>
+            Join me in this journey.
             </motion.p>
 
-            <motion.p className="text-lg text-gray-600" variants={fadeInUp}>
+            {/* <motion.p className="text-lg text-gray-600" variants={fadeInUp}>
               With extensive experience in modern web technologies and a strong
               foundation in both frontend and backend development, I help
               businesses build scalable solutions and mentor aspiring developers
               to achieve their goals.
-            </motion.p>
+            </motion.p> */}
 
             <motion.div
               className="grid grid-cols-2 gap-4 pt-4"
               variants={fadeInUp}
             >
               <div className="p-4 bg-gray-50 rounded-lg">
-                <h3 className="font-bold text-xl text-gray-900">3+</h3>
+                <h3 className="font-bold text-xl text-gray-900">12+</h3>
                 <p className="text-gray-600">Years Experience</p>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg">
-                <h3 className="font-bold text-xl text-gray-900">125K+</h3>
-                <p className="text-gray-600">YouTube Subscribers</p>
+                <h3 className="font-bold text-xl text-gray-900">1400+</h3>
+                <p className="text-gray-600">LinkedIn Followers</p>
               </div>
             </motion.div>
           </motion.div>

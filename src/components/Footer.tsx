@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, Mail, X } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -6,13 +6,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-2xl font-bold mb-2">Your Name</h3>
+            <h3 className="text-2xl font-bold mb-2">Swapnil Kangralkar</h3>
             <p className="text-gray-400">Building digital experiences</p>
           </div>
           
           <div className="flex space-x-6">
             <a
-              href="https://github.com"
+              href="https://github.com/swapnilin?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -20,7 +20,7 @@ export default function Footer() {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/swapnilin/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
@@ -28,15 +28,15 @@ export default function Footer() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/Swapnilklkar"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors"
             >
-              <Twitter className="w-6 h-6" />
+              <X className="w-6 h-6" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:swapnil.kangralkar@gmail.com"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <Mail className="w-6 h-6" />
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Swapnil Kangralkar. All rights reserved.</p>
         </div>
       </div>
     </footer>

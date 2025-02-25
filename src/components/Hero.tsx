@@ -46,36 +46,31 @@ export default function Hero() {
         initial="initial"
         animate="animate"
       >
-        <div className="space-y-8">
+        <div className="space-y-9">
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold"
+            className="text-4xl md:text-6xl font-bold"
             variants={fadeInUp}
           >
             <motion.span 
               className="block text-white opacity-90"
               variants={fadeInUp}
             >
-              Building the Future
+              Machine Learning, Future Thinking
             </motion.span>
             <motion.span 
               className={`block ${gradientText}`}
               variants={fadeInUp}
             >
-              One Line of Code
+              Building tomorrow's AI, today.
             </motion.span>
-            <motion.span 
-              className="block text-white opacity-90"
-              variants={fadeInUp}
-            >
-              at a Time
-            </motion.span>
+
           </motion.h1>
 
           <motion.p 
             className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto"
             variants={fadeInUp}
           >
-            Full Stack Developer | UI/UX Enthusiast | Problem Solver
+            Data Scientist | AI Engineer | Project Manager, PMP®
           </motion.p>
 
           <motion.div 
