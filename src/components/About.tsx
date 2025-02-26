@@ -16,34 +16,37 @@ export default function About() {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12 items-stretch" // ✅ Ensures equal height alignment
           variants={staggerContainer}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
         >
+          {/* Adjusted Image Container (Same Height as Bio) */}
           <motion.div
-            className="aspect-square rounded-2xl overflow-hidden"
+            className="flex items-stretch" // ✅ Ensures it stretches fully
             variants={fadeInUp}
           >
             <img
-              src="/workspaces/portfolio-website/dist/swapnil.png"
+              src="/swapnil_bio.JPG"
               alt="Swapnil Kangralkar"
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full h-full object-cover rounded-2xl" // ✅ Image fills container, keeping alignment
             />
           </motion.div>
 
-          <motion.div className="space-y-6" variants={staggerContainer}>
-            <motion.p className="text-lg text-black-600" variants={fadeInUp}>
-            Hello there, my name is Swapnil Kangralkar. I am a Data Scientist based in Ottawa, Canada.<br/><br/>
-            <strong>Fun fact</strong> - I was born on 04/20 (April 20) at 4:20 pm<br/><br/>
-            I am a lifelong learner and I am currently in the journey of learning everything there is to Machine Learning and Artificial Intelligence. One technology at a time. <br/>
-            My portfolio of projects is a representation of all the practical knowledge that I have gained and applied over time.
-            To view my projects portfolio visit the Github repository by clicking the button below.
-            <br/><br/>
-            Join me in this journey.
+          {/* Bio Section (Takes 2 Columns, Aligns with Image) */}
+          <motion.div className="md:col-span-2 flex flex-col justify-between space-y-6" variants={staggerContainer}>
+            <motion.p className="text-lg text-gray-700" variants={fadeInUp}>
+              Hello there, my name is Swapnil Kangralkar. I am a Data Scientist based in Ottawa, Canada.<br/><br/>
+              <strong>Fun fact</strong> - I was born on 04/20 (April 20) at 4:20 pm<br/><br/>
+              I am a lifelong learner and I am currently in the journey of learning everything there is to Machine Learning and Artificial Intelligence. One technology at a time. <br/>
+              My portfolio of projects is a representation of all the practical knowledge that I have gained and applied over time.
+              To view my projects portfolio visit the Github repository by clicking the button below.
+              <br/><br/>
+              Join me in this journey.
             </motion.p>
 
+            {/* Experience & LinkedIn Stats */}
             <motion.div
               className="grid grid-cols-2 gap-4 pt-4"
               variants={fadeInUp}

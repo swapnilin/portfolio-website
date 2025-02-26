@@ -24,7 +24,7 @@ export const timelineData: TimelineItem[] = [
   },
   {
     year: '2016-2017',
-    title: 'Business Intelligence and Data Science',
+    title: 'Business Intelligence and Systems Infrastructure',
     company: 'Alonquin College',
     description: 'Specialization in Machine Learning & Artificial Intelligence',
     icon: 'education'
