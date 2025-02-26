@@ -1,4 +1,4 @@
-declare module "vanta/dist/vanta.net.min" {
+declare module "vanta/dist/vanta.globe.min" {
     import { VantaBase } from "vanta";
-    export default function NET(options: any): VantaBase;
+    export default function GLOBE(options: any): VantaBase;
   }  

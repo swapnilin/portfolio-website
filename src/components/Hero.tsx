@@ -4,28 +4,26 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
 import * as THREE from "three";
-import NET from "vanta/dist/vanta.net.min";
+import GLOBE from "vanta/dist/vanta.globe.min";
 import { gradientText, gradientBg, gradientHover } from "../utils/gradients";
 import { fadeInUp, staggerContainer } from "../utils/animations";
-import { alphaT } from "three/tsl";
 
-export default function Hero() {
+export default function Hero() { 
   const vantaRef = useRef<HTMLDivElement>(null);
   const [vantaEffect, setVantaEffect] = useState<any>(null);
 
   useEffect(() => {
     if (!vantaEffect && vantaRef.current) {
       setVantaEffect(
-        NET({
+        GLOBE({
           el: vantaRef.current,
           THREE,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
-          minHeight: 100.00,
-          minWidth: 100.00,
+          minHeight: 200.00,
+          minWidth: 200.00,
           scale: 0.5,
-          alphaT:0.2,
           scaleMobile: 0.5,
           color: 0xFFD700,  // Adjust this for vibrant colors (Orange-Red)
           backgroundColor: 0x000000, // Dark background
