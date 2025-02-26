@@ -12,6 +12,7 @@ const skills = [
       'Natural Language Processing: NLTK, TextBlob', 'Explainable AI (XAI): SHAP, LIME', 'GenAI: Object Detection, Object Identification, Text-to-Speech, Fine Tuned Conversational AI',
       'MLOps', 'A/B Testing','Langchain', 'Huggingface','Prompt Engineering'
     ],
+    tools:['Tableau', 'PowerBI', 'Palantir', 'IBM SPSS Modeller', ' Alteryx', 'Azure ML', 'AWS Sagemaker', 'Google Vertex AI']
   },
   {
     category: 'Project Management',
@@ -102,19 +103,9 @@ export default function Skills() {
                 {/* Tools Section */}
                 {category.tools && (
                   <div className="mt-auto pt-4 border-gray-200">
-                    <h4 className="text-sm font-semibold text-gray-600">Tools</h4>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {category.tools.map((tool, toolIndex) => (
-                        <motion.span
-                          key={toolIndex}
-                          className="py-1 text-sm"
-                          whileHover={{ scale: 1.1 }}
-                          transition={{ duration: 0.2 }}
-                        >
-                          {tool}
-                        </motion.span>
-                      ))}
-                    </div>
+                   <p className="text-gray-800 text-sm mt-3">
+                    <strong>Tools:</strong> {category.tools.join(', ')}
+                  </p>
                   </div>
                 )}
               </motion.div>
