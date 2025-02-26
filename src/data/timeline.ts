@@ -20,7 +20,7 @@ export const timelineData: TimelineItem[] = [
     title: 'Project Management',
     company: 'Algonquin College',
     description: 'Specialization in technical, leadership and business strategy skills to plan and execute projects',
-    icon: 'work'
+    icon: 'education'
   },
   {
     year: '2016-2017',
