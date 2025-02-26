@@ -8,8 +8,11 @@ const skills = [
     icon: BrainCircuit,
     skills: [
       'Supervised Learning & Unsupervised Learning: Random Forest, XGBoost, SVM',
-      'Deep Learning: CNN, LSTM, Tensorflow, Pytorch','Time Series Forecasting: ARIMA, Prophet', 'Reinforcement Learning: Q-learning, Thompson Sampling, Contextual Bandits', 
-      'Natural Language Processing: NLTK, TextBlob', 'Explainable AI (XAI): SHAP, LIME', 'GenAI: Object Detection, Object Identification, Text-to-Speech, Fine Tuned Conversational AI',
+      'Deep Learning: CNN, LSTM, Tensorflow, Pytorch','Time Series Forecasting: ARIMA, Prophet',
+      'Reinforcement Learning: Q-learning, Thompson Sampling, Contextual Bandits',
+      'Statistics & Calculus: Maxima, Minima, Vector Calculus, Gradient Descent, Learning rate, Cost/Loss function, Distributions, Probability, Bagging and Bootstrapping',
+      'GenAI: Object Detection, Object Identification, Text-to-Speech, Fine Tuned Conversational AI',
+      'Natural Language Processing: NLTK, TextBlob', 'Explainable AI (XAI): SHAP, LIME', 
       'MLOps', 'A/B Testing','Langchain', 'Huggingface','Prompt Engineering'
     ],
     tools:['Tableau', 'PowerBI', 'Palantir', 'IBM SPSS Modeller', ' Alteryx', 'Azure ML', 'AWS Sagemaker', 'Google Vertex AI']
@@ -103,7 +106,7 @@ export default function Skills() {
                 {/* Tools Section */}
                 {category.tools && (
                   <div className="mt-auto pt-4 border-gray-200">
-                   <p className="text-gray-800 text-sm mt-3">
+                   <p className="text-indigo-800 text-sm mt-3">
                     <strong>Tools:</strong> {category.tools.join(', ')}
                   </p>
                   </div>
