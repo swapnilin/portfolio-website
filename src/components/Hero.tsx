@@ -28,9 +28,8 @@ export default function Hero() {
           color: 0xFFD700,  // Adjust this for vibrant colors (Orange-Red)
           backgroundColor: 0x000000, // Dark background
           backgroundAlpha: 1, // Reduce opacity (0 is fully transparent, 1 is opaque)
-          points: 6.00,
-          maxDistance: 25.00,
-          spacing: 27.00,
+          size: 0.80, // this contorls the globe size
+          spacing: 15.00, // this controls the net
           showDots: true, // Set to true if you want the dots visible
         })
       );
