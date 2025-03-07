@@ -100,6 +100,22 @@ export default function Projects() {
         isOpen={!!selectedProject}
         onClose={() => setSelectedProject(null)}
       />
+
+            {/* Divider and GitHub Repositories Link */}
+            <div className="mt-16 text-center">
+        <p className="text-gray-700">
+          For more projects and code repositories, click{" "}
+          <a
+            href="https://github.com/swapnilin?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-indigo-700 hover:underline"
+          >
+            here
+          </a>.
+        </p>
+      </div>
+
     </section>
   );
 }

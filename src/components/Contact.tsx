@@ -71,7 +71,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Email</p>
-                  <p className="text-gray-900 font-medium">swapnil.kangralkar@gmail.com</p>
+                  <p className="text-gray-900 font-medium">Please connect via LinkedIn or click on the mail icon at the bottom right of the page.</p>
                 </div>
               </motion.div>
               
