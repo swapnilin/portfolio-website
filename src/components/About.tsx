@@ -27,11 +27,8 @@ export default function About() {
             className="flex items-stretch" // ✅ Ensures it stretches fully
             variants={fadeInUp}
           >
-            <img
-              src="https://github.com/swapnilin/portfolio-website/blob/main/public/swapnil_bio.JPG"
-              alt="Swapnil Kangralkar"
-              className="w-full h-full object-cover rounded-2xl" // ✅ Image fills container, keeping alignment
-            />
+            <img src="/swapnil_bio.JPG" alt="Swapnil Kangralkar" className="w-full h-full object-cover rounded-2xl" />
+          
           </motion.div>
 
           {/* Bio Section (Takes 2 Columns, Aligns with Image) */}
