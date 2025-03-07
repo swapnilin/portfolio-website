@@ -28,7 +28,7 @@ export default function About() {
             variants={fadeInUp}
           >
             <img
-              src="https://github.com/swapnilin/portfolio-website/blob/main/public/swapnil_bio.png"
+              src="https://github.com/swapnilin/portfolio-website/blob/main/public/swapnil_bio.JPG"
               alt="Swapnil Kangralkar"
               className="w-full h-full object-cover rounded-2xl" // ✅ Image fills container, keeping alignment
             />
