@@ -6,11 +6,7 @@ export const timelineData: TimelineItem[] = [
     title: 'Business Planning & Workforce Manager',
     company: 'Google - Google Cloud',
     description: 'Strategize, operationlize and scale workflows, technology and processes used by vendors and internal teams through process efficiency and automation.',
-    //icon: 'work',
-    icon: (
-      <img src="https://www.gstatic.com/marketing-cms/assets/images/d5/dc/cfe9ce8b4425b410b49b7f2dd3f3/g.webp=s96-fcrop64=1,00000000ffffffff-rw" alt="Google Logo" className="w-6 h-6" 
-      />
-    ),
+    icon: 'work'
   },
   {
     year: '2022 - 2025',
