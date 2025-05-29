@@ -2,7 +2,14 @@ import { TimelineItem } from '../types';
 
 export const timelineData: TimelineItem[] = [
   {
-    year: '2022 - Present',
+    year: '2025 - Present',
+    title: 'Business Planning & Workforce Manager',
+    company: 'Google',
+    description: 'Strategize, operationlize and scale workflows, technology and processes used by vendors and internal teams through process efficiency and automation.',
+    icon: 'work'
+  },
+  {
+    year: '2022 - 2025',
     title: 'Data Science Manager',
     company: 'Canada Post - Operations Intelligence',
     description: 'Optimizing Operations with AI-Driven Workforce Management, Demand Forecasting & Dynamic Pricing',
