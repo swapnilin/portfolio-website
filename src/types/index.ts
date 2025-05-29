@@ -3,7 +3,8 @@ export interface TimelineItem {
   title: string;
   company: string;
   description: string;
-  icon: 'work' | 'education';
+  icon: React.ReactNode;
+  //icon: 'work' | 'education';
 }
 
 export interface ProjectItem {
