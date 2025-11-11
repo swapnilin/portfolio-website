@@ -84,7 +84,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Location</p>
-                  <p className="text-gray-900 font-medium">Ottawa, Canada</p>
+                  <p className="text-gray-900 font-medium"><Toronto></Toronto>, Canada</p>
                 </div>
               </motion.div>
             </div>
