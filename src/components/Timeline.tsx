@@ -6,7 +6,7 @@ export default function Timeline() {
   return (
     <section id="timeline" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h2 
+        <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -14,7 +14,7 @@ export default function Timeline() {
         >
           Experience & Education
         </motion.h2>
-        
+
         <div className="relative">
           {/* Vertical Line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-200" />
@@ -33,9 +33,8 @@ export default function Timeline() {
                 <div className="w-1/2 pr-8 pl-8">
                   <motion.div
                     whileHover={{ scale: 1.02 }}
-                    className={`bg-white p-6 rounded-lg shadow-md ${
-                      index % 2 === 0 ? 'text-right' : 'text-left'
-                    }`}
+                    className={`bg-white p-6 rounded-lg shadow-md ${index % 2 === 0 ? 'text-right' : 'text-left'
+                      }`}
                   >
                     <span className="inline-block px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium mb-2">
                       {item.year}
@@ -46,14 +45,23 @@ export default function Timeline() {
                   </motion.div>
                 </div>
 
-                {/* Icon */}
+                {/* Icon or Logo */}
                 <motion.div
-                  whileHover={{ rotate: 360 }}
+                  whileHover={{ scale: item.logo ? 1.1 : 1, rotate: item.logo ? 0 : 360 }}
                   transition={{ duration: 0.6 }}
-                  className="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center z-10"
+                  className={`flex items-center justify-center z-10 ${item.logo
+                    ? 'w-20 h-16'
+                    : 'w-12 h-12 rounded-full bg-indigo-600'
+                    }`}
                 >
-                  {item.icon === 'work' ? (
-                    <Briefcase className="w-6 h-6 text-white" />
+                  {item.logo ? (
+                    <img
+                      src={item.logo}
+                      alt={`${item.company} logo`}
+                      className="w-full h-full object-contain drop-shadow-lg"
+                    />
+                  ) : item.icon === 'work' ? (
+                    <Briefcase className="w-10 h-10 text-white" />
                   ) : (
                     <GraduationCap className="w-6 h-6 text-white" />
                   )}

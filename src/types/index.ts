@@ -4,6 +4,7 @@ export interface TimelineItem {
   company: string;
   description: string;
   icon: 'work' | 'education';
+  logo?: string; // Optional company logo URL
 }
 
 export interface ProjectItem {

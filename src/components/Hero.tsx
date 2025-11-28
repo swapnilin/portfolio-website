@@ -7,10 +7,16 @@ import * as THREE from "three";
 import GLOBE from "vanta/dist/vanta.globe.min";
 import { gradientText, gradientBg, gradientHover } from "../utils/gradients";
 import { fadeInUp, staggerContainer } from "../utils/animations";
+import { useTypewriter } from "../hooks/useTypewriter";
 
-export default function Hero() { 
+export default function Hero() {
   const vantaRef = useRef<HTMLDivElement>(null);
   const [vantaEffect, setVantaEffect] = useState<any>(null);
+  const { displayText, isComplete } = useTypewriter({
+    text: "Machine Learning & Future Thinking",
+    speed: 80,
+    delay: 1000
+  });
 
   useEffect(() => {
     if (!vantaEffect && vantaRef.current) {
@@ -62,11 +68,17 @@ export default function Hero() {
               with
             </motion.span>
             <motion.span className={`block ${gradientText} leading-normal`} variants={fadeInUp}>
-              Machine Learning & Future Thinking
+              {displayText}
+              {!isComplete && (
+                <span className="animate-pulse">|</span>
+              )}
+              {isComplete && (
+                <span className="blink-dot">.</span>
+              )}
             </motion.span>
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             className="text-xl md:text-2xl max-w-3xl mx-auto bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-300 text-transparent bg-clip-text"
             variants={fadeInUp}>
             Data Scientist | AI Engineer | Project Management Professional, PMP®
