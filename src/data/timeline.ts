@@ -5,7 +5,7 @@ export const timelineData: TimelineItem[] = [
     year: '2025 - Present',
     title: 'GCP Operations Lead - Strategy, Systems, & Intelligence (SSI)',
     company: 'Google - Google Cloud',
-    description: 'Strategize, operationlize and scale workflows, technology and processes used by vendors and internal teams through process efficiency and automation.',
+    description: 'Drive the strategy and execution of scalable workflows across vendor and internal operations by integrating process optimization frameworks and AI solutions to enhance operational efficiency and business performance.',
     icon: 'work',
     logo: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
   },
